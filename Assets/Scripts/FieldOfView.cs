@@ -45,14 +45,17 @@ public class FieldOfView : MonoBehaviour
             if (Vector3.Angle(transform.forward, directionToTarget) < angle / 2)
             {
                 float distanceToTarget = Vector3.Distance(transform.position, target.position);
-
+                
                 if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
                     canSeePlayer = true;
+                
                 else
                     canSeePlayer = false;
+                
             }
             else
                 canSeePlayer = false;
+            
         }
         else if (canSeePlayer)
             canSeePlayer = false;
