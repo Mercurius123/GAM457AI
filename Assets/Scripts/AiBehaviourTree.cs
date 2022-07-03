@@ -16,6 +16,9 @@ public class AiBehaviourTree : MonoBehaviour
 
     public float health;
 
+    public float speed = 3f;
+    
+
     //Patroling
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -55,6 +58,12 @@ public class AiBehaviourTree : MonoBehaviour
         if (!playerInSightRange && !playerInAttackRange) Patroling();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         // if (playerInAttackRange && playerInSightRange) AttackPlayer();
+
+        // rotate direction to player
+        Vector3 direction = player.position - transform.position;
+        Quaternion rotation = Quaternion.LookRotation(direction);
+        transform.rotation = Quaternion.Lerp(transform.rotation, rotation, speed * Time.deltaTime);
+
     }
 
     private void Patroling()
