@@ -18,6 +18,8 @@ MonoBehaviour:
       name: InSightRange
     - id: 1
       name: InAttackRange
+    - id: 2
+      name: damagePlayer
   actions:
   - name: Chase
     isDefault: 0
@@ -26,9 +28,9 @@ MonoBehaviour:
     position: {x: 418, y: 229}
     pre:
     - id: 0
-      value: 0
+      value: 1
     post:
-    - id: 0
+    - id: 1
       value: 1
   - name: Patrolling
     isDefault: 1
@@ -38,9 +40,9 @@ MonoBehaviour:
     pre:
     - id: 0
       value: 0
-    - id: 1
-      value: 0
-    post: []
+    post:
+    - id: 0
+      value: 1
   - name: Attack
     isDefault: 0
     state: {fileID: 0}
@@ -48,24 +50,24 @@ MonoBehaviour:
     position: {x: 612, y: 231}
     pre:
     - id: 1
-      value: 0
+      value: 1
     post:
-    - id: 1
+    - id: 2
       value: 1
   goals:
   - name: Kill Player
     isDefault: 1
     position: {x: 211, y: 73}
     conditions:
-    - id: 0
-      value: 1
-    - id: 1
+    - id: 2
       value: 1
   worldStates:
   - position: {x: 233, y: 445}
     isAutoUpdate: 1
     list:
     - id: 0
-      value: 1
+      value: 0
     - id: 1
-      value: 1
+      value: 0
+    - id: 2
+      value: 0
