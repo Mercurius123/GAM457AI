@@ -1,18 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Anthill.AI;
+using Anthill.Utils;
 
-public class Attack : MonoBehaviour
+public class Attack : AntAIState
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void Create(GameObject aGameObject)
     {
-        
+        base.Create(aGameObject);
+
+
+
+
+    }
+    public override void Enter()
+    {
+        base.Enter();
+
+
+
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void Execute(float aDeltaTime, float aTimeScale)
     {
-        
+        base.Execute(aDeltaTime, aTimeScale);
+
+
+
+
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+
+
+
     }
 }

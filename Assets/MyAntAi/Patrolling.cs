@@ -1,18 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Anthill.AI;
 
-public class Patrolling : MonoBehaviour
+public class Patrolling : AntAIState
 {
-    // Start is called before the first frame update
-    void Start()
+    public float speed = 100;
+
+    public GameObject maingameObject;
+
+    public override void Create(GameObject aGameObject)
     {
-        
+        base.Create(aGameObject);
+
+        maingameObject = aGameObject;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void Execute(float aDeltaTime, float aTimeScale)
     {
-        
+        base.Execute(aDeltaTime, aTimeScale);
+
+        // maingameObject.GetComponent<Rigidbody>().AddForce(new Vector3(x:Random.Range)(-speed. speed), y:0, z:Random.Range(-speed, speed));
     }
 }

@@ -23,7 +23,7 @@ MonoBehaviour:
   actions:
   - name: Chase
     isDefault: 0
-    state: {fileID: 0}
+    state: {fileID: 6104512431563226560, guid: 642cd9a45d3c93747a025aa9054cd489, type: 3}
     cost: 0
     position: {x: 418, y: 229}
     pre:
@@ -34,7 +34,7 @@ MonoBehaviour:
       value: 1
   - name: Patrolling
     isDefault: 1
-    state: {fileID: 0}
+    state: {fileID: 2811701084487572292, guid: 7e9ae97998fc3dc42a69e5b8384a60ee, type: 3}
     cost: 0
     position: {x: 223, y: 228}
     pre:
@@ -45,7 +45,7 @@ MonoBehaviour:
       value: 1
   - name: Attack
     isDefault: 0
-    state: {fileID: 0}
+    state: {fileID: 82171762984540251, guid: ba9e8dd8927c88741b1e7d5cb36656c4, type: 3}
     cost: 0
     position: {x: 612, y: 231}
     pre:
