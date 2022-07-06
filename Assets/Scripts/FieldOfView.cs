@@ -11,6 +11,7 @@ public class FieldOfView : MonoBehaviour
 
     public GameObject playerRef;
 
+    public LayerMask whatIsGround, whatIsPlayer;
     public LayerMask targetMask;
     public LayerMask obstructionMask;
 
@@ -35,7 +36,7 @@ public class FieldOfView : MonoBehaviour
 
     private void FieldOfViewCheck()
     {
-        Collider[] rangeChecks = Physics.OverlapSphere(transform.position, radius, targetMask);
+        Collider[] rangeChecks = Physics.OverlapSphere(transform.position, radius, whatIsPlayer);
 
         if (rangeChecks.Length != 0)
         {
