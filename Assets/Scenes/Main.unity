@@ -3833,7 +3833,6 @@ MonoBehaviour:
   speed: 3
   rotationSpeed: 90
   gravity: -20
-  jumpSpeed: 15
 --- !u!143 &758842623
 CharacterController:
   m_ObjectHideFlags: 0
@@ -39507,7 +39506,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 40.1, z: -79.18}
+  m_LocalPosition: {x: 0, y: 40.1, z: -78.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42251,7 +42250,7 @@ MonoBehaviour:
   health: 100
   speed: 3
   walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 10
+  walkPointRange: 30
   timeBetweenAttacks: 3
   projectile: {fileID: 521192468}
   sightRange: 20
@@ -42267,10 +42266,10 @@ NavMeshAgent:
   m_GameObject: {fileID: 2947128496835935162}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 2
   m_Speed: 2
   m_Acceleration: 1
-  avoidancePriority: 50
+  avoidancePriority: 99
   m_AngularSpeed: 120
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
@@ -42468,7 +42467,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9193743252287890893, guid: 25c585a74396157429735fbd3bed3d2c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.26
+      value: 14.2
       objectReference: {fileID: 0}
     - target: {fileID: 9193743252287890893, guid: 25c585a74396157429735fbd3bed3d2c, type: 3}
       propertyPath: m_LocalRotation.w

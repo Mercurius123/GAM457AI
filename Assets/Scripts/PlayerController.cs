@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 3;
     public float rotationSpeed = 90;
     public float gravity = -20f;
-    public float jumpSpeed = 15;
+    // public float jumpSpeed = 15;
 
     CharacterController characterController;
     Vector3 moveVelocity;
@@ -28,9 +28,9 @@ public class PlayerController : MonoBehaviour
         {
             moveVelocity = transform.forward * speed * vInput;
             turnVelocity = transform.up * rotationSpeed * hInput;
-            if (Input.GetButtonDown("Jump"))
+            // if (Input.GetButtonDown("Jump"))
             {
-                moveVelocity.y = jumpSpeed;
+               // moveVelocity.y = jumpSpeed;
             }
         }
         //Adding gravity
